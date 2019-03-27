@@ -1,19 +1,26 @@
-FROM mcr.microsoft.com/dotnet/core/runtime:2.2 AS runtime
-WORKDIR /app  
-EXPOSE 5000
+FROM microsoft/dotnet:2.2-sdk-alpine as build
+WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
-WORKDIR /src  
-COPY src/ProductsApi.csproj .  
-RUN dotnet restore  
-COPY . .  
-WORKDIR /src  
-RUN dotnet build -c Release -o /app
+COPY src/ProductsApi.csproj ./src/
+WORKDIR /app/src
+RUN dotnet restore
 
-FROM build AS publish  
-RUN dotnet publish -c Release -o /app
+# copy and publish app and libraries
+WORKDIR /app
+COPY src/. ./src/
+WORKDIR /app/src
+RUN dotnet publish -c Release -o out
 
-FROM runtime AS final  
-WORKDIR /app  
-COPY --from=publish /app .  
-ENTRYPOINT ["dotnet", "ProductsApi.dll"]  
+
+FROM build AS testrunner
+WORKDIR /app/tests
+COPY __tests__/. .
+#ENTRYPOINT ["dotnet", "test", "--logger:trx"]
+
+
+FROM microsoft/dotnet:2.2-aspnetcore-runtime-alpine as runtime
+ENV ASPNETCORE_ENVIRONMENT Production 
+WORKDIR /app
+COPY --from=build /app/src/out ./
+EXPOSE 80
+ENTRYPOINT ["dotnet", "ProductsApi.dll"]
