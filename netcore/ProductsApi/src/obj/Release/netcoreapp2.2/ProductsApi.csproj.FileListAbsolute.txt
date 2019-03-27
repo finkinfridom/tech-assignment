@@ -1,0 +1,14 @@
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\app\ProductsApi.deps.json
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\app\ProductsApi.runtimeconfig.json
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\app\ProductsApi.runtimeconfig.dev.json
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\app\ProductsApi.dll
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\app\ProductsApi.pdb
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.csprojAssemblyReference.cache
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.csproj.CoreCompileInputs.cache
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.RazorAssemblyInfo.cache
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.RazorAssemblyInfo.cs
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.AssemblyInfoInputs.cache
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.AssemblyInfo.cs
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.RazorTargetAssemblyInfo.cache
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.dll
+C:\Users\alberto.maghini\Source\Repos\github\finkinfridom\tech-assignments\ProductsApi\src\obj\Release\netcoreapp2.2\ProductsApi.pdb
