@@ -7,17 +7,13 @@ services:
     ports:
       - 27018:27017
     command: mongod --smallfiles --bind_ip_all
-    volumes:
-      - ${WEBAPP_STORAGE_HOME}/__data__/db/testing:/data/db
   prd-mongodb:
     image: mongo:latest
     container_name: prd-mongodb
     restart: always
     ports:
       - 27017:27017
-    volumes:
-      - ${WEBAPP_STORAGE_HOME}/__data__/db/prd:/data/db
-    command: mongod --smallfiles --bind_ip_all
+    command: mongod --smallfiles --bind_ip_all --dbpath /data/db
   products-api:
     container_name: products-api
     build: ProductsApi
